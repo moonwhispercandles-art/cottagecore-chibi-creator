@@ -1,0 +1,26 @@
+<div id="loading-overlay" class="fixed inset-0 bg-white bg-opacity-90 z-50 flex flex-col items-center justify-center p-6 transition-opacity duration-300">
+    <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-green-500"></div>
+    <p class="mt-4 text-lg text-green-700 font-semibold font-sans-inter">Loading Assets...</p>
+</div>
+
+<div class="min-h-screen bg-gray-50 flex flex-col md:flex-row font-sans-inter">
+    
+    <!-- Left Panel: Character Canvas -->
+    <div class="w-full md:w-3/5 lg:w-2/3 flex flex-col items-center justify-center p-4 bg-green-100/50">
+        <h1 class="text-3xl font-extrabold text-green-800 mb-6 mt-4 md:mt-0 shadow-text">Cottagecore Chibi Maker</h1>
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden border-8 border-green-500 max-w-full" style="width: 500px; height: 600px;">
+            <canvas id="characterCanvas" width="500" height="600" class="block"></canvas>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">Design is 500x600 px</p>
+    </div>
+    
+    <!-- Right Panel: Controls -->
+    <div class="w-full md:w-2/5 lg:w-1/3 p-4 md:p-8 overflow-y-auto max-h-screen">
+        <h2 class="text-2xl font-bold text-green-800 mb-6 pb-2 border-b-4 border-green-200">Customize Your Chibi</h2>
+        
+        <div id="controlsContainer" class="space-y-6">
+            <!-- Control sections will be injected here by JavaScript -->
+        </div>
+        
+    </div>
+</div>
