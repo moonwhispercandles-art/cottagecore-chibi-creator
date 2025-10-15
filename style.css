@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+/* Tailwind CSS classes are assumed to be available in the environment */
+
+/* Base font and styling */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f8fcf5;
+}
+
+/* Custom class to handle asset preview buttons */
+.asset-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+}
+
+.asset-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.asset-button-preview {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 !important;
+    text-indent: -9999px; /* Hide text, rely on background image */
+}
+
+/* Selected Button Style */
+.selected-asset {
+    border-color: #4CAF50; /* A stronger green */
+    background-color: #e6f3e6; /* Light green background */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Green ring effect */
+    transform: scale(1.05);
+}
+
+/* Shadow Text for Titles */
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
